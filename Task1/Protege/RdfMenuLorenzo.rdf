@@ -1,0 +1,2267 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/"
+     xml:base="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:kebi2024="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/animalProduct_containsLactose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/animalProduct_containsLactose">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Lactose"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/drink_hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/drink_hasIngredient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Drink"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/food_hasCategories -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/food_hasCategories">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasAllergies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasAllergies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasCategory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasPreferenceCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasPreferenceCourse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_isAtRiskAllergies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_isAtRiskAllergies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_mealSuggested -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_mealSuggested">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_hasGlutenIntolerance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_hasGlutenIntolerance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Gluten"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_hasLactoseIntolerance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_hasLactoseIntolerance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Lactose"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasCourse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasGlutenIntolerance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasGlutenIntolerance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Gluten"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasLactoseIntolerance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasLactoseIntolerance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_ingredients -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_ingredients">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_notHasGlutenIntolerance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_notHasGlutenIntolerance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Gluten"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_notHasLactoseIntolerance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_notHasLactoseIntolerance">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Lactose"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/menu_containsDrink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/menu_containsDrink">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Menu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Drink"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/menu_containsMeal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/menu_containsMeal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Menu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/restaurant_hasGuest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/restaurant_hasGuest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/restaurant_hasMenu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/restaurant_hasMenu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Menu"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_CaloriesLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_CaloriesLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/hasKcal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/hasKcal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_caloriesConscious -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_caloriesConscious">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/AnimalProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/AnimalProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Course"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Dairy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Dairy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Drink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Drink"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Fruit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Fruit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Gluten -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Gluten">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Grain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Grain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Lactose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Lactose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Liquid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Liquid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Menu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Menu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Restaurant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/SeaFood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/SeaFood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Seasoning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Seasoning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Vegetable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Vegetable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Gluten"/>
+        <hasName>Gluten</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Lactose"/>
+        <hasName>Lactose</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Category"/>
+        <hasName>Carnivorous</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Category"/>
+        <hasName>Omnivore</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Category"/>
+        <hasName>Vegetarian</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_appetizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_appetizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Course"/>
+        <hasName>Appetizer</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_dessert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_dessert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Course"/>
+        <hasName>Dessert</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_first_dish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_first_dish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Course"/>
+        <hasName>First Dish</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_main_dish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_main_dish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Course"/>
+        <hasName>Main dish</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_second_dish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_second_dish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Course"/>
+        <hasName>Second dish</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_side_dish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_side_dish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Course"/>
+        <hasName>Side dish</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/drink_coca_cola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/drink_coca_cola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Drink"/>
+        <drink_hasIngredient rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sugar-and-food-coloring"/>
+        <drink_hasIngredient rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_water"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</hasKcal>
+        <hasName>Coca Cola</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/drink_water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/drink_water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Drink"/>
+        <drink_hasIngredient rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_water"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasKcal>
+        <hasName>Water</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+        <guest_hasAllergies rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <guest_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <guest_hasPreferenceCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_second_dish"/>
+        <guest_CaloriesLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</guest_CaloriesLevel>
+        <hasName>Lorenzo</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+        <guest_hasAllergies rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <guest_hasCategory rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <guest_hasPreferenceCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_side_dish"/>
+        <guest_CaloriesLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</guest_CaloriesLevel>
+        <guest_CaloriesLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</guest_CaloriesLevel>
+        <guest_CaloriesLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</guest_CaloriesLevel>
+        <guest_CaloriesLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</guest_CaloriesLevel>
+        <hasName>Mario</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_0_type_flour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_0_type_flour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Grain"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <ingredient_hasGlutenIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</hasKcal>
+        <hasName>Flour type 0</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Fruit"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasKcal>
+        <hasName>Apple</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_banana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_banana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Fruit"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasKcal>
+        <hasName>Banana</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_bechamel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_bechamel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Dairy"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <ingredient_hasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasKcal>
+        <hasName>Bechamel</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_black-pepper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_black-pepper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Seasoning"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasKcal>
+        <hasName>Black pepper</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cabbage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cabbage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Vegetable"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasKcal>
+        <hasName>Cabbage</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_calamari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_calamari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/SeaFood"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</hasKcal>
+        <hasName>Calamari</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_carrot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_carrot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Vegetable"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasKcal>
+        <hasName>Carrot</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_chili -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_chili">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Seasoning"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasKcal>
+        <hasName>Chili</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_ciauscolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_ciauscolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</hasKcal>
+        <hasName>Ciauscolo</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/SeaFood"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasKcal>
+        <hasName>Cod</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cows-cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cows-cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/AnimalProduct"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Dairy"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <ingredient_hasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasKcal>
+        <hasName>Cow cheese</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_egg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_egg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/AnimalProduct"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</hasKcal>
+        <hasName>Egg</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_eggplant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_eggplant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Vegetable"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasKcal>
+        <hasName>Eggplant</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_garlic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_garlic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Seasoning"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasKcal>
+        <hasName>Garlic</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_ham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_ham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasKcal>
+        <hasName>Ham</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_lettuce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_lettuce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Vegetable"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</hasKcal>
+        <hasName>Lettuce</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Vegetable"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</hasKcal>
+        <hasName>Mais</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_minced-meat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_minced-meat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</hasKcal>
+        <hasName>Minced Meat</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mozzarella-cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mozzarella-cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/AnimalProduct"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Dairy"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <ingredient_hasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasKcal>
+        <hasName>Mozzarella cheese</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mussel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mussel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/SeaFood"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</hasKcal>
+        <hasName>Mussel</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Seasoning"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</hasKcal>
+        <hasName>Oil</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_parmesan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_parmesan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/AnimalProduct"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Dairy"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <ingredient_hasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</hasKcal>
+        <hasName>Parmesan</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pasta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pasta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Grain"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <ingredient_hasGlutenIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</hasKcal>
+        <hasName>Pasta</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pork-cheek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pork-cheek">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</hasKcal>
+        <hasName>Pork cheek</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pork-chop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pork-chop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</hasKcal>
+        <hasName>Pork chop</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pork-rib -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pork-rib">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</hasKcal>
+        <hasName>Pork Rib</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_potato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_potato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Vegetable"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasKcal>
+        <hasName>Potato</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_puff-pastry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_puff-pastry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Grain"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <ingredient_hasGlutenIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasKcal>
+        <hasName>Puff pastry</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salame -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salame">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasKcal>
+        <hasName>Salame</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salmon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salmon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/SeaFood"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasKcal>
+        <hasName>Salmon</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Seasoning"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasKcal>
+        <hasName>Salt</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sausage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sausage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</hasKcal>
+        <hasName>Sausage</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sheeps-cheese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sheeps-cheese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/AnimalProduct"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Dairy"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <ingredient_hasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</hasKcal>
+        <hasName>Sheep cheese</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_shrimp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_shrimp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/SeaFood"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasKcal>
+        <hasName>Shrimp</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_steak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_steak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</hasKcal>
+        <hasName>Steak</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_strawberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_strawberry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Fruit"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasKcal>
+        <hasName>Strawberry</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sugar-and-food-coloring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sugar-and-food-coloring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Liquid"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</hasKcal>
+        <hasName>Sugar and food coloring</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sword-fish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sword-fish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/SeaFood"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</hasKcal>
+        <hasName>Sword fish</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_tomato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_tomato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Vegetable"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</hasKcal>
+        <hasName>Tomato</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Liquid"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasKcal>
+        <hasName>Water</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_affettati-misti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_affettati-misti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_appetizer"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_ciauscolo"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_ham"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salame"/>
+        <meal_notHasGlutenIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</hasKcal>
+        <hasName>Affettati misti</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_bistecca-alla-fiorentina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_bistecca-alla-fiorentina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_second_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_steak"/>
+        <meal_notHasGlutenIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">540</hasKcal>
+        <hasName>Bistecca alla fiorentina</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_formaggi-misti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_formaggi-misti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_appetizer"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cows-cheese"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_parmesan"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sheeps-cheese"/>
+        <meal_notHasGlutenIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</hasKcal>
+        <hasName>Formaggi misti</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_fruit-salad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_fruit-salad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_dessert"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_apple"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_banana"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_strawberry"/>
+        <meal_notHasGlutenIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</hasKcal>
+        <hasName>Fruit salad</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_insalata-mista -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_insalata-mista">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_side_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_lettuce"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mais"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_notHasGlutenIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</hasKcal>
+        <hasName>Insalata mista</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_involtini-primavera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_involtini-primavera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_appetizer"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cabbage"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_carrot"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_puff-pastry"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">260</hasKcal>
+        <hasName>Involtini primavera</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_lasagne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_lasagne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_first_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_bechamel"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_minced-meat"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_parmesan"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pasta"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_tomato"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</hasKcal>
+        <hasName>Lasagne</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_melanzane_grigliate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_melanzane_grigliate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_side_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_eggplant"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_notHasGlutenIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</hasKcal>
+        <hasName>Melanzane grigliate</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_patatine-fritte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_patatine-fritte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_side_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_potato"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_notHasGlutenIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</hasKcal>
+        <hasName>Patatine fritte</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_pesce-fritto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_pesce-fritto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_side_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_calamari"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cod"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_shrimp"/>
+        <meal_notHasGlutenIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</hasKcal>
+        <hasName>Pesce fritto</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_pizza-bianca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_pizza-bianca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_main_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_0_type_flour"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</hasKcal>
+        <hasName>Pizza bianca</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_pizza-margherita -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_pizza-margherita">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_main_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_0_type_flour"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mozzarella-cheese"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_tomato"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</hasKcal>
+        <hasName>Pizza Margherita</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_ramen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_ramen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_main_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_black-pepper"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_egg"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_garlic"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pasta"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pork-chop"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_water"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</hasKcal>
+        <hasName>Ramen</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_rigatoni-alla-carbonara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_rigatoni-alla-carbonara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_first_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_black-pepper"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_egg"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pasta"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pork-cheek"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">705</hasKcal>
+        <hasName>Rigatoni alla carbonara</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_spaghetti-agli-olio-e-peperoncino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_spaghetti-agli-olio-e-peperoncino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_first_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_chili"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_garlic"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pasta"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">380</hasKcal>
+        <hasName>Pasta aglio olio e peperoncino</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_tagliatelle-allo-scoglio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_tagliatelle-allo-scoglio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_first_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_calamari"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_chili"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_garlic"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mussel"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pasta"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_shrimp"/>
+        <meal_notHasLactoseIntolerance rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</hasKcal>
+        <hasName>Tagliatelle allo scoglio</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_trofie-cacio-e-pepe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_trofie-cacio-e-pepe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_first_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_black-pepper"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pasta"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sheeps-cheese"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">510</hasKcal>
+        <hasName>Trofie cacio e pepe</hasName>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_verdure-miste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_verdure-miste">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore"/>
+        <food_hasCategories rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian"/>
+        <meal_hasCourse rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_second_dish"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cabbage"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_eggplant"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_lettuce"/>
+        <meal_ingredients rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt"/>
+        <hasKcal rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasKcal>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</meal_caloriesConscious>
+        <meal_caloriesConscious rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</meal_caloriesConscious>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/menu_italian-menu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/menu_italian-menu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Menu"/>
+        <menu_containsDrink rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/drink_coca_cola"/>
+        <menu_containsDrink rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/drink_water"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_affettati-misti"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_bistecca-alla-fiorentina"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_formaggi-misti"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_fruit-salad"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_insalata-mista"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_involtini-primavera"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_lasagne"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_melanzane_grigliate"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_patatine-fritte"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_pizza-bianca"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_pizza-margherita"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_rigatoni-alla-carbonara"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_spaghetti-agli-olio-e-peperoncino"/>
+        <menu_containsMeal rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_trofie-cacio-e-pepe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/restaurant_our-restaurant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/restaurant_our-restaurant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Restaurant"/>
+        <restaurant_hasGuest rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_1"/>
+        <restaurant_hasGuest rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_2"/>
+        <restaurant_hasMenu rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/menu_italian-menu"/>
+        <hasName>Da Lorenzo</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/level">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/gluten">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/dairy">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasCategory"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasAllergies"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_CaloriesLevel"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/level"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasPreferenceCourse"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Category"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/food_hasCategories"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_notHasLactoseIntolerance"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_caloriesConscious"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/level"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasCourse"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_mealSuggested"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasCategory"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasAllergies"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_CaloriesLevel"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/level"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasPreferenceCourse"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Category"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/food_hasCategories"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_notHasGlutenIntolerance"/>
+                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_caloriesConscious"/>
+                                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/level"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasCourse"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_mealSuggested"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasAllergies"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_ingredients"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_hasGlutenIntolerance"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_isAtRiskAllergies"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasAllergies"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_ingredients"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_hasLactoseIntolerance"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_isAtRiskAllergies"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_ingredients"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_hasGlutenIntolerance"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/gluten"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasGlutenIntolerance"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/gluten"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_ingredients"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_hasLactoseIntolerance"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/dairy"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasLactoseIntolerance"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/dairy"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

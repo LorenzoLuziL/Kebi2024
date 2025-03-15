@@ -1,0 +1,23 @@
+S1
+
+kebi2024:Guest(?guest) ^ kebi2024:guest_hasAllergies(?guest, ?allergy) ^ kebi2024:Meal(?meal) ^ kebi2024:meal_ingredients(?meal, ?ingredient) ^ kebi2024:ingredient_hasGlutenIntolerance(?ingredient, ?allergy) -> kebi2024:guest_isAtRiskAllergies(?guest, ?meal)
+
+S2
+
+kebi2024:Guest(?guest) ^ kebi2024:guest_hasAllergies(?guest, ?allergy) ^ kebi2024:Meal(?meal) ^ kebi2024:meal_ingredients(?meal, ?ingredient) ^ kebi2024:ingredient_hasLactoseIntolerance(?ingredient, ?allergy) -> kebi2024:guest_isAtRiskAllergies(?guest, ?meal)
+
+S3
+
+kebi2024:Meal(?meal) ^ kebi2024:meal_ingredients(?meal, ?ingredient) ^ kebi2024:Ingredient(?ingredient) ^ kebi2024:ingredient_hasGlutenIntolerance(?ingredient, ?gluten) -> kebi2024:meal_hasGlutenIntolerance(?meal, ?gluten)
+
+S4
+
+kebi2024:Meal(?meal) ^ kebi2024:meal_ingredients(?meal, ?ingredient) ^ kebi2024:Ingredient(?ingredient) ^ kebi2024:ingredient_hasLactoseIntolerance(?ingredient, ?dairy) -> kebi2024:meal_hasLactoseIntolerance(?meal, ?dairy)
+
+S5
+
+kebi2024:Guest(?guest) ^ kebi2024:guest_hasCategory(?guest, ?category) ^ kebi2024:guest_hasAllergies(?guest, ?allergy) ^ kebi2024:guest_CaloriesLevel(?guest, ?level) ^ kebi2024:guest_hasPreferenceCourse(?guest, ?course) ^ kebi2024:Category(?category) ^ kebi2024:Allergy(?allergy) ^ kebi2024:Meal(?meal) ^ kebi2024:food_hasCategories(?meal, ?category) ^ kebi2024:meal_notHasGlutenIntolerance(?meal, ?allergy) ^ kebi2024:meal_caloriesConscious(?meal, ?level) ^ kebi2024:meal_hasCourse(?meal, ?course) -> kebi2024:guest_mealSuggested(?guest, ?meal)
+
+S6
+
+kebi2024:Guest(?guest) ^ kebi2024:guest_hasCategory(?guest, ?category) ^ kebi2024:guest_hasAllergies(?guest, ?allergy) ^ kebi2024:guest_CaloriesLevel(?guest, ?level) ^ kebi2024:guest_hasPreferenceCourse(?guest, ?course) ^ kebi2024:Category(?category) ^ kebi2024:Allergy(?allergy) ^ kebi2024:Meal(?meal) ^ kebi2024:food_hasCategories(?meal, ?category) ^ kebi2024:meal_notHasLactoseIntolerance(?meal, ?allergy) ^ kebi2024:meal_caloriesConscious(?meal, ?level) ^ kebi2024:meal_hasCourse(?meal, ?course) -> kebi2024:guest_mealSuggested(?guest, ?meal)

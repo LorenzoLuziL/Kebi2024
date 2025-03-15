@@ -1,0 +1,78 @@
+
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix xml: <http://www.w3.org/XML/1998/namespace> 
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix kebi: <http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/> 
+SELECT ?meal
+WHERE {
+	?meal rdf:type kebi:Meal .
+	?meal kebi:food_hasCategories kebi:category_carnivorous
+}
+
+
+
+SELECT ?ingredient
+WHERE {
+kebi:meal_pizza-margherita kebi:meal_ingredients ?ingredient .
+ }
+
+
+
+Select distinct ?meal ?mealName
+Where{
+    kebi:guest_1 a kebi:Guest;
+    kebi:guest_hasAllergies ?allergy;
+    kebi:guest_hasCategory ?category;
+    kebi:guest_hasPreferenceCourse ?course;
+    kebi:guest_CaloriesLevel ?caloriesLevel.
+    
+    ?meal a kebi:Meal;
+    kebi:food_hasCategories ?category;
+    kebi:meal_caloriesConscious ?caloriesLevel;
+    kebi:meal_hasCourse ?course;
+    kebi:hasName ?mealName.
+    
+    MINUS { ?meal kebi:meal_hasGlutenIntolerance ?allergy}
+    MINUS{?meal kebi:meal_hasLactoseIntolerance ?allergy}
+}
+
+
+
+
+select ?meal 
+where{
+    ?meal rdf:type kebi:Meal.
+    ?meal kebi:food_hasCategories kebi:category_vegetarian.
+}
+
+
+
+
+
+select ?ingredient ?kcal
+where{
+    ?ingredient a kebi:Ingredient.
+	?ingredient kebi:hasKcal ?kcal.
+}
+
+
+
+ 
+
+select distinct ?meal ?calories 
+where {
+    ?meal rdf:type ?type.
+    ?meal kebi:meal_caloriesConscious ?calories.
+    Filter(?calories=3).
+    
+}
+ 
+
+select distinct ?meal 
+where {
+   ?meal rdf:type kebi:Meal.
+   ?meal kebi:meal_hasGlutenIntolerance kebi:allergy_gluten .
+    
+}

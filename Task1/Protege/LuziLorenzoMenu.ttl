@@ -1,0 +1,1559 @@
+@prefix : <http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix kebi2024: <http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/> .
+@base <http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/> .
+
+<http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/animalProduct_containsLactose
+kebi2024:animalProduct_containsLactose rdf:type owl:ObjectProperty ;
+                                       rdfs:domain kebi2024:Food ,
+                                                   kebi2024:Ingredient ;
+                                       rdfs:range kebi2024:Allergy ,
+                                                  kebi2024:Lactose .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/drink_hasIngredient
+kebi2024:drink_hasIngredient rdf:type owl:ObjectProperty ;
+                             rdfs:domain kebi2024:Drink ;
+                             rdfs:range kebi2024:Food ,
+                                        kebi2024:Ingredient .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/food_hasCategories
+kebi2024:food_hasCategories rdf:type owl:ObjectProperty ;
+                            rdfs:domain kebi2024:Food ;
+                            rdfs:range kebi2024:Category .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasAllergies
+kebi2024:guest_hasAllergies rdf:type owl:ObjectProperty ;
+                            rdfs:domain kebi2024:Guest ;
+                            rdfs:range kebi2024:Allergy .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasCategory
+kebi2024:guest_hasCategory rdf:type owl:ObjectProperty ;
+                           rdfs:domain kebi2024:Guest ;
+                           rdfs:range kebi2024:Category .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_hasPreferenceCourse
+kebi2024:guest_hasPreferenceCourse rdf:type owl:ObjectProperty ;
+                                   rdfs:domain kebi2024:Guest ;
+                                   rdfs:range kebi2024:Course .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_isAtRiskAllergies
+kebi2024:guest_isAtRiskAllergies rdf:type owl:ObjectProperty ;
+                                 rdfs:domain kebi2024:Guest ;
+                                 rdfs:range kebi2024:Meal .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_mealSuggested
+kebi2024:guest_mealSuggested rdf:type owl:ObjectProperty ;
+                             rdfs:domain kebi2024:Guest ;
+                             rdfs:range kebi2024:Meal .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_hasGlutenIntolerance
+kebi2024:ingredient_hasGlutenIntolerance rdf:type owl:ObjectProperty ;
+                                         rdfs:domain kebi2024:Food ,
+                                                     kebi2024:Ingredient ;
+                                         rdfs:range kebi2024:Allergy ,
+                                                    kebi2024:Gluten .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_hasLactoseIntolerance
+kebi2024:ingredient_hasLactoseIntolerance rdf:type owl:ObjectProperty ;
+                                          rdfs:domain kebi2024:Food ,
+                                                      kebi2024:Ingredient ;
+                                          rdfs:range kebi2024:Allergy ,
+                                                     kebi2024:Lactose .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasCourse
+kebi2024:meal_hasCourse rdf:type owl:ObjectProperty ;
+                        rdfs:domain kebi2024:Food ,
+                                    kebi2024:Meal ;
+                        rdfs:range kebi2024:Course .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasGlutenIntolerance
+kebi2024:meal_hasGlutenIntolerance rdf:type owl:ObjectProperty ;
+                                   rdfs:domain kebi2024:Meal ;
+                                   rdfs:range kebi2024:Allergy ,
+                                              kebi2024:Gluten .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_hasLactoseIntolerance
+kebi2024:meal_hasLactoseIntolerance rdf:type owl:ObjectProperty ;
+                                    rdfs:domain kebi2024:Meal ;
+                                    rdfs:range kebi2024:Allergy .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_ingredients
+kebi2024:meal_ingredients rdf:type owl:ObjectProperty ;
+                          rdfs:domain kebi2024:Food ,
+                                      kebi2024:Meal ;
+                          rdfs:range kebi2024:Food ,
+                                     kebi2024:Ingredient .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_notHasGlutenIntolerance
+kebi2024:meal_notHasGlutenIntolerance rdf:type owl:ObjectProperty ;
+                                      rdfs:domain kebi2024:Food ,
+                                                  kebi2024:Meal ;
+                                      rdfs:range kebi2024:Allergy ,
+                                                 kebi2024:Gluten .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_notHasLactoseIntolerance
+kebi2024:meal_notHasLactoseIntolerance rdf:type owl:ObjectProperty ;
+                                       rdfs:domain kebi2024:Food ,
+                                                   kebi2024:Meal ;
+                                       rdfs:range kebi2024:Allergy ,
+                                                  kebi2024:Lactose .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/menu_containsDrink
+kebi2024:menu_containsDrink rdf:type owl:ObjectProperty ;
+                            rdfs:domain kebi2024:Menu ;
+                            rdfs:range kebi2024:Drink .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/menu_containsMeal
+kebi2024:menu_containsMeal rdf:type owl:ObjectProperty ;
+                           rdfs:domain kebi2024:Menu ;
+                           rdfs:range kebi2024:Food ,
+                                      kebi2024:Meal .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/restaurant_hasGuest
+kebi2024:restaurant_hasGuest rdf:type owl:ObjectProperty ;
+                             rdfs:domain kebi2024:Restaurant ;
+                             rdfs:range kebi2024:Guest .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/restaurant_hasMenu
+kebi2024:restaurant_hasMenu rdf:type owl:ObjectProperty ;
+                            rdfs:domain kebi2024:Restaurant ;
+                            rdfs:range kebi2024:Menu .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_CaloriesLevel
+kebi2024:guest_CaloriesLevel rdf:type owl:DatatypeProperty ;
+                             rdfs:domain kebi2024:Guest ;
+                             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/hasKcal
+kebi2024:hasKcal rdf:type owl:DatatypeProperty ;
+                 rdfs:domain kebi2024:Food ;
+                 rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/hasName
+kebi2024:hasName rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain owl:Thing ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_caloriesConscious
+kebi2024:meal_caloriesConscious rdf:type owl:DatatypeProperty ;
+                                rdfs:domain kebi2024:Food ,
+                                            kebi2024:Meal ;
+                                rdfs:range [ rdf:type rdfs:Datatype ;
+                                             owl:onDatatype xsd:integer ;
+                                             owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                    ]
+                                                                    [ xsd:maxInclusive 3
+                                                                    ]
+                                                                  )
+                                           ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Allergy
+kebi2024:Allergy rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/AnimalProduct
+kebi2024:AnimalProduct rdf:type owl:Class ;
+                       rdfs:subClassOf kebi2024:Ingredient .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Category
+kebi2024:Category rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Course
+kebi2024:Course rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Dairy
+kebi2024:Dairy rdf:type owl:Class ;
+               rdfs:subClassOf kebi2024:Ingredient .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Drink
+kebi2024:Drink rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Food
+kebi2024:Food rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Fruit
+kebi2024:Fruit rdf:type owl:Class ;
+               rdfs:subClassOf kebi2024:Ingredient .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Gluten
+kebi2024:Gluten rdf:type owl:Class ;
+                rdfs:subClassOf kebi2024:Allergy .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Grain
+kebi2024:Grain rdf:type owl:Class ;
+               rdfs:subClassOf kebi2024:Ingredient .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Guest
+kebi2024:Guest rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Ingredient
+kebi2024:Ingredient rdf:type owl:Class ;
+                    rdfs:subClassOf kebi2024:Food .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Lactose
+kebi2024:Lactose rdf:type owl:Class ;
+                 rdfs:subClassOf kebi2024:Allergy .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Liquid
+kebi2024:Liquid rdf:type owl:Class ;
+                rdfs:subClassOf kebi2024:Ingredient .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meal
+kebi2024:Meal rdf:type owl:Class ;
+              rdfs:subClassOf kebi2024:Food .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Meat
+kebi2024:Meat rdf:type owl:Class ;
+              rdfs:subClassOf kebi2024:Ingredient .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Menu
+kebi2024:Menu rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Restaurant
+kebi2024:Restaurant rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/SeaFood
+kebi2024:SeaFood rdf:type owl:Class ;
+                 rdfs:subClassOf kebi2024:Ingredient .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Seasoning
+kebi2024:Seasoning rdf:type owl:Class ;
+                   rdfs:subClassOf kebi2024:Ingredient .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/Vegetable
+kebi2024:Vegetable rdf:type owl:Class ;
+                   rdfs:subClassOf kebi2024:Ingredient .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_gluten
+kebi2024:allergy_gluten rdf:type owl:NamedIndividual ,
+                                 kebi2024:Gluten ;
+                        kebi2024:hasName "Gluten" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/allergy_lactose
+kebi2024:allergy_lactose rdf:type owl:NamedIndividual ,
+                                  kebi2024:Lactose ;
+                         kebi2024:hasName "Lactose" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_carnivorous
+kebi2024:category_carnivorous rdf:type owl:NamedIndividual ,
+                                       kebi2024:Category ;
+                              kebi2024:hasName "Carnivorous" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_omnivore
+kebi2024:category_omnivore rdf:type owl:NamedIndividual ,
+                                    kebi2024:Category ;
+                           kebi2024:hasName "Omnivore" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/category_vegetarian
+kebi2024:category_vegetarian rdf:type owl:NamedIndividual ,
+                                      kebi2024:Category ;
+                             kebi2024:hasName "Vegetarian" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_appetizer
+kebi2024:course_appetizer rdf:type owl:NamedIndividual ,
+                                   kebi2024:Course ;
+                          kebi2024:hasName "Appetizer" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_dessert
+kebi2024:course_dessert rdf:type owl:NamedIndividual ,
+                                 kebi2024:Course ;
+                        kebi2024:hasName "Dessert" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_first_dish
+kebi2024:course_first_dish rdf:type owl:NamedIndividual ,
+                                    kebi2024:Course ;
+                           kebi2024:hasName "First Dish" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_main_dish
+kebi2024:course_main_dish rdf:type owl:NamedIndividual ,
+                                   kebi2024:Course ;
+                          kebi2024:hasName "Main dish" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_second_dish
+kebi2024:course_second_dish rdf:type owl:NamedIndividual ,
+                                     kebi2024:Course ;
+                            kebi2024:hasName "Second dish" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/course_side_dish
+kebi2024:course_side_dish rdf:type owl:NamedIndividual ,
+                                   kebi2024:Course ;
+                          kebi2024:hasName "Side dish" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/drink_coca_cola
+kebi2024:drink_coca_cola rdf:type owl:NamedIndividual ,
+                                  kebi2024:Drink ;
+                         kebi2024:drink_hasIngredient kebi2024:ingredient_sugar-and-food-coloring ,
+                                                      kebi2024:ingredient_water ;
+                         kebi2024:hasKcal 60 ;
+                         kebi2024:hasName "Coca Cola" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/drink_water
+kebi2024:drink_water rdf:type owl:NamedIndividual ,
+                              kebi2024:Drink ;
+                     kebi2024:drink_hasIngredient kebi2024:ingredient_water ;
+                     kebi2024:hasKcal 0 ;
+                     kebi2024:hasName "Water" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_1
+kebi2024:guest_1 rdf:type owl:NamedIndividual ,
+                          kebi2024:Guest ;
+                 kebi2024:guest_hasAllergies kebi2024:allergy_gluten ;
+                 kebi2024:guest_hasCategory kebi2024:category_carnivorous ;
+                 kebi2024:guest_hasPreferenceCourse kebi2024:course_second_dish ;
+                 kebi2024:guest_CaloriesLevel 0 ;
+                 kebi2024:hasName "Lorenzo" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/guest_2
+kebi2024:guest_2 rdf:type owl:NamedIndividual ,
+                          kebi2024:Guest ;
+                 kebi2024:guest_hasAllergies kebi2024:allergy_lactose ;
+                 kebi2024:guest_hasCategory kebi2024:category_vegetarian ;
+                 kebi2024:guest_hasPreferenceCourse kebi2024:course_side_dish ;
+                 kebi2024:guest_CaloriesLevel 0 ,
+                                              1 ,
+                                              2 ,
+                                              3 ;
+                 kebi2024:hasName "Mario" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_0_type_flour
+kebi2024:ingredient_0_type_flour rdf:type owl:NamedIndividual ,
+                                          kebi2024:Grain ;
+                                 kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                             kebi2024:category_omnivore ,
+                                                             kebi2024:category_vegetarian ;
+                                 kebi2024:ingredient_hasGlutenIntolerance kebi2024:allergy_gluten ;
+                                 kebi2024:hasKcal 500 ;
+                                 kebi2024:hasName "Flour type 0" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_apple
+kebi2024:ingredient_apple rdf:type owl:NamedIndividual ,
+                                   kebi2024:Fruit ;
+                          kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                      kebi2024:category_vegetarian ;
+                          kebi2024:hasKcal 35 ;
+                          kebi2024:hasName "Apple" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_banana
+kebi2024:ingredient_banana rdf:type owl:NamedIndividual ,
+                                    kebi2024:Fruit ;
+                           kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                       kebi2024:category_vegetarian ;
+                           kebi2024:hasKcal 40 ;
+                           kebi2024:hasName "Banana" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_bechamel
+kebi2024:ingredient_bechamel rdf:type owl:NamedIndividual ,
+                                      kebi2024:Dairy ;
+                             kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                         kebi2024:category_omnivore ,
+                                                         kebi2024:category_vegetarian ;
+                             kebi2024:ingredient_hasLactoseIntolerance kebi2024:allergy_lactose ;
+                             kebi2024:hasKcal 100 ;
+                             kebi2024:hasName "Bechamel" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_black-pepper
+kebi2024:ingredient_black-pepper rdf:type owl:NamedIndividual ,
+                                          kebi2024:Seasoning ;
+                                 kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                             kebi2024:category_omnivore ,
+                                                             kebi2024:category_vegetarian ;
+                                 kebi2024:hasKcal 15 ;
+                                 kebi2024:hasName "Black pepper" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cabbage
+kebi2024:ingredient_cabbage rdf:type owl:NamedIndividual ,
+                                     kebi2024:Vegetable ;
+                            kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                        kebi2024:category_vegetarian ;
+                            kebi2024:hasKcal 15 ;
+                            kebi2024:hasName "Cabbage" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_calamari
+kebi2024:ingredient_calamari rdf:type owl:NamedIndividual ,
+                                      kebi2024:SeaFood ;
+                             kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                         kebi2024:category_omnivore ;
+                             kebi2024:hasKcal 47 ;
+                             kebi2024:hasName "Calamari" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_carrot
+kebi2024:ingredient_carrot rdf:type owl:NamedIndividual ,
+                                    kebi2024:Vegetable ;
+                           kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                       kebi2024:category_vegetarian ;
+                           kebi2024:hasKcal 20 ;
+                           kebi2024:hasName "Carrot" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_chili
+kebi2024:ingredient_chili rdf:type owl:NamedIndividual ,
+                                   kebi2024:Seasoning ;
+                          kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                      kebi2024:category_omnivore ,
+                                                      kebi2024:category_vegetarian ;
+                          kebi2024:hasKcal 13 ;
+                          kebi2024:hasName "Chili" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_ciauscolo
+kebi2024:ingredient_ciauscolo rdf:type owl:NamedIndividual ,
+                                       kebi2024:Meat ;
+                              kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                          kebi2024:category_omnivore ;
+                              kebi2024:hasKcal 67 ;
+                              kebi2024:hasName "Ciauscolo" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cod
+kebi2024:ingredient_cod rdf:type owl:NamedIndividual ,
+                                 kebi2024:SeaFood ;
+                        kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                    kebi2024:category_omnivore ;
+                        kebi2024:hasKcal 40 ;
+                        kebi2024:hasName "Cod" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_cows-cheese
+kebi2024:ingredient_cows-cheese rdf:type owl:NamedIndividual ,
+                                         kebi2024:AnimalProduct ,
+                                         kebi2024:Dairy ;
+                                kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                            kebi2024:category_omnivore ,
+                                                            kebi2024:category_vegetarian ;
+                                kebi2024:ingredient_hasLactoseIntolerance kebi2024:allergy_lactose ;
+                                kebi2024:hasKcal 100 ;
+                                kebi2024:hasName "Cow cheese" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_egg
+kebi2024:ingredient_egg rdf:type owl:NamedIndividual ,
+                                 kebi2024:AnimalProduct ;
+                        kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                    kebi2024:category_omnivore ,
+                                                    kebi2024:category_vegetarian ;
+                        kebi2024:hasKcal 68 ;
+                        kebi2024:hasName "Egg" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_eggplant
+kebi2024:ingredient_eggplant rdf:type owl:NamedIndividual ,
+                                      kebi2024:Vegetable ;
+                             kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                         kebi2024:category_vegetarian ;
+                             kebi2024:hasKcal 20 ;
+                             kebi2024:hasName "Eggplant" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_garlic
+kebi2024:ingredient_garlic rdf:type owl:NamedIndividual ,
+                                    kebi2024:Seasoning ;
+                           kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                       kebi2024:category_omnivore ,
+                                                       kebi2024:category_vegetarian ;
+                           kebi2024:hasKcal 1 ;
+                           kebi2024:hasName "Garlic" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_ham
+kebi2024:ingredient_ham rdf:type owl:NamedIndividual ,
+                                 kebi2024:Meat ;
+                        kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                    kebi2024:category_omnivore ;
+                        kebi2024:hasKcal 40 ;
+                        kebi2024:hasName "Ham" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_lettuce
+kebi2024:ingredient_lettuce rdf:type owl:NamedIndividual ,
+                                     kebi2024:Vegetable ;
+                            kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                        kebi2024:category_vegetarian ;
+                            kebi2024:hasKcal 23 ;
+                            kebi2024:hasName "Lettuce" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mais
+kebi2024:ingredient_mais rdf:type owl:NamedIndividual ,
+                                  kebi2024:Vegetable ;
+                         kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                     kebi2024:category_vegetarian ;
+                         kebi2024:hasKcal 59 ;
+                         kebi2024:hasName "Mais" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_minced-meat
+kebi2024:ingredient_minced-meat rdf:type owl:NamedIndividual ,
+                                         kebi2024:Meat ;
+                                kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                            kebi2024:category_omnivore ;
+                                kebi2024:hasKcal 120 ;
+                                kebi2024:hasName "Minced Meat" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mozzarella-cheese
+kebi2024:ingredient_mozzarella-cheese rdf:type owl:NamedIndividual ,
+                                               kebi2024:AnimalProduct ,
+                                               kebi2024:Dairy ;
+                                      kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                                  kebi2024:category_omnivore ,
+                                                                  kebi2024:category_vegetarian ;
+                                      kebi2024:ingredient_hasLactoseIntolerance kebi2024:allergy_lactose ;
+                                      kebi2024:hasKcal 100 ;
+                                      kebi2024:hasName "Mozzarella cheese" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_mussel
+kebi2024:ingredient_mussel rdf:type owl:NamedIndividual ,
+                                    kebi2024:SeaFood ;
+                           kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                       kebi2024:category_omnivore ;
+                           kebi2024:hasKcal 49 ;
+                           kebi2024:hasName "Mussel" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_oil
+kebi2024:ingredient_oil rdf:type owl:NamedIndividual ,
+                                 kebi2024:Seasoning ;
+                        kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                    kebi2024:category_omnivore ,
+                                                    kebi2024:category_vegetarian ;
+                        kebi2024:hasKcal 60 ;
+                        kebi2024:hasName "Oil" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_parmesan
+kebi2024:ingredient_parmesan rdf:type owl:NamedIndividual ,
+                                      kebi2024:AnimalProduct ,
+                                      kebi2024:Dairy ;
+                             kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                         kebi2024:category_omnivore ,
+                                                         kebi2024:category_vegetarian ;
+                             kebi2024:ingredient_hasLactoseIntolerance kebi2024:allergy_lactose ;
+                             kebi2024:hasKcal 70 ;
+                             kebi2024:hasName "Parmesan" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pasta
+kebi2024:ingredient_pasta rdf:type owl:NamedIndividual ,
+                                   kebi2024:Grain ;
+                          kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                      kebi2024:category_omnivore ,
+                                                      kebi2024:category_vegetarian ;
+                          kebi2024:ingredient_hasGlutenIntolerance kebi2024:allergy_gluten ;
+                          kebi2024:hasKcal 300 ;
+                          kebi2024:hasName "Pasta" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pork-cheek
+kebi2024:ingredient_pork-cheek rdf:type owl:NamedIndividual ,
+                                        kebi2024:Meat ;
+                               kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                           kebi2024:category_omnivore ;
+                               kebi2024:hasKcal 150 ;
+                               kebi2024:hasName "Pork cheek" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pork-chop
+kebi2024:ingredient_pork-chop rdf:type owl:NamedIndividual ,
+                                       kebi2024:Meat ;
+                              kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                          kebi2024:category_omnivore ;
+                              kebi2024:hasKcal 130 ;
+                              kebi2024:hasName "Pork chop" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_pork-rib
+kebi2024:ingredient_pork-rib rdf:type owl:NamedIndividual ,
+                                      kebi2024:Meat ;
+                             kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                         kebi2024:category_omnivore ;
+                             kebi2024:hasKcal 70 ;
+                             kebi2024:hasName "Pork Rib" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_potato
+kebi2024:ingredient_potato rdf:type owl:NamedIndividual ,
+                                    kebi2024:Vegetable ;
+                           kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                       kebi2024:category_omnivore ,
+                                                       kebi2024:category_vegetarian ;
+                           kebi2024:hasKcal 40 ;
+                           kebi2024:hasName "Potato" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_puff-pastry
+kebi2024:ingredient_puff-pastry rdf:type owl:NamedIndividual ,
+                                         kebi2024:Grain ;
+                                kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                            kebi2024:category_omnivore ,
+                                                            kebi2024:category_vegetarian ;
+                                kebi2024:ingredient_hasGlutenIntolerance kebi2024:allergy_gluten ;
+                                kebi2024:hasKcal 100 ;
+                                kebi2024:hasName "Puff pastry" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salame
+kebi2024:ingredient_salame rdf:type owl:NamedIndividual ,
+                                    kebi2024:Meat ;
+                           kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                       kebi2024:category_omnivore ;
+                           kebi2024:hasKcal 50 ;
+                           kebi2024:hasName "Salame" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salmon
+kebi2024:ingredient_salmon rdf:type owl:NamedIndividual ,
+                                    kebi2024:SeaFood ;
+                           kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                       kebi2024:category_omnivore ;
+                           kebi2024:hasKcal 100 ;
+                           kebi2024:hasName "Salmon" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_salt
+kebi2024:ingredient_salt rdf:type owl:NamedIndividual ,
+                                  kebi2024:Seasoning ;
+                         kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                     kebi2024:category_omnivore ,
+                                                     kebi2024:category_vegetarian ;
+                         kebi2024:hasKcal 0 ;
+                         kebi2024:hasName "Salt" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sausage
+kebi2024:ingredient_sausage rdf:type owl:NamedIndividual ,
+                                     kebi2024:Meat ;
+                            kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                        kebi2024:category_omnivore ;
+                            kebi2024:hasKcal 200 ;
+                            kebi2024:hasName "Sausage" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sheeps-cheese
+kebi2024:ingredient_sheeps-cheese rdf:type owl:NamedIndividual ,
+                                           kebi2024:AnimalProduct ,
+                                           kebi2024:Dairy ;
+                                  kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                              kebi2024:category_omnivore ,
+                                                              kebi2024:category_vegetarian ;
+                                  kebi2024:ingredient_hasLactoseIntolerance kebi2024:allergy_lactose ;
+                                  kebi2024:hasKcal 130 ;
+                                  kebi2024:hasName "Sheep cheese" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_shrimp
+kebi2024:ingredient_shrimp rdf:type owl:NamedIndividual ,
+                                    kebi2024:SeaFood ;
+                           kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                       kebi2024:category_omnivore ;
+                           kebi2024:hasKcal 30 ;
+                           kebi2024:hasName "Shrimp" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_steak
+kebi2024:ingredient_steak rdf:type owl:NamedIndividual ,
+                                   kebi2024:Meat ;
+                          kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                      kebi2024:category_omnivore ;
+                          kebi2024:hasKcal 450 ;
+                          kebi2024:hasName "Steak" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_strawberry
+kebi2024:ingredient_strawberry rdf:type owl:NamedIndividual ,
+                                        kebi2024:Fruit ;
+                               kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                           kebi2024:category_vegetarian ;
+                               kebi2024:hasKcal 20 ;
+                               kebi2024:hasName "Strawberry" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sugar-and-food-coloring
+kebi2024:ingredient_sugar-and-food-coloring rdf:type owl:NamedIndividual ,
+                                                     kebi2024:Liquid ;
+                                            kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                                        kebi2024:category_omnivore ,
+                                                                        kebi2024:category_vegetarian ;
+                                            kebi2024:hasKcal 60 ;
+                                            kebi2024:hasName "Sugar and food coloring" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_sword-fish
+kebi2024:ingredient_sword-fish rdf:type owl:NamedIndividual ,
+                                        kebi2024:SeaFood ;
+                               kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                           kebi2024:category_omnivore ;
+                               kebi2024:hasKcal 110 ;
+                               kebi2024:hasName "Sword fish" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_tomato
+kebi2024:ingredient_tomato rdf:type owl:NamedIndividual ,
+                                    kebi2024:Vegetable ;
+                           kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                       kebi2024:category_vegetarian ;
+                           kebi2024:hasKcal 30 ;
+                           kebi2024:hasName "Tomato" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/ingredient_water
+kebi2024:ingredient_water rdf:type owl:NamedIndividual ,
+                                   kebi2024:Liquid ;
+                          kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                      kebi2024:category_omnivore ,
+                                                      kebi2024:category_vegetarian ;
+                          kebi2024:hasKcal 0 ;
+                          kebi2024:hasName "Water" .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_affettati-misti
+kebi2024:meal_affettati-misti rdf:type owl:NamedIndividual ,
+                                       kebi2024:Meal ;
+                              kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                          kebi2024:category_omnivore ;
+                              kebi2024:meal_hasCourse kebi2024:course_appetizer ;
+                              kebi2024:meal_ingredients kebi2024:ingredient_ciauscolo ,
+                                                        kebi2024:ingredient_ham ,
+                                                        kebi2024:ingredient_salame ;
+                              kebi2024:meal_notHasGlutenIntolerance kebi2024:allergy_gluten ;
+                              kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                              kebi2024:hasKcal 200 ;
+                              kebi2024:hasName "Affettati misti" ;
+                              kebi2024:meal_caloriesConscious 0 ,
+                                                              1 ,
+                                                              2 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_bistecca-alla-fiorentina
+kebi2024:meal_bistecca-alla-fiorentina rdf:type owl:NamedIndividual ,
+                                                kebi2024:Meal ;
+                                       kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                                   kebi2024:category_omnivore ;
+                                       kebi2024:meal_hasCourse kebi2024:course_second_dish ;
+                                       kebi2024:meal_ingredients kebi2024:ingredient_oil ,
+                                                                 kebi2024:ingredient_salt ,
+                                                                 kebi2024:ingredient_steak ;
+                                       kebi2024:meal_notHasGlutenIntolerance kebi2024:allergy_gluten ;
+                                       kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                                       kebi2024:hasKcal 540 ;
+                                       kebi2024:hasName "Bistecca alla fiorentina" ;
+                                       kebi2024:meal_caloriesConscious 0 ,
+                                                                       1 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_formaggi-misti
+kebi2024:meal_formaggi-misti rdf:type owl:NamedIndividual ,
+                                      kebi2024:Meal ;
+                             kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                         kebi2024:category_omnivore ,
+                                                         kebi2024:category_vegetarian ;
+                             kebi2024:meal_hasCourse kebi2024:course_appetizer ;
+                             kebi2024:meal_ingredients kebi2024:ingredient_cows-cheese ,
+                                                       kebi2024:ingredient_parmesan ,
+                                                       kebi2024:ingredient_sheeps-cheese ;
+                             kebi2024:meal_notHasGlutenIntolerance kebi2024:allergy_gluten ;
+                             kebi2024:hasKcal 300 ;
+                             kebi2024:hasName "Formaggi misti" ;
+                             kebi2024:meal_caloriesConscious 0 ,
+                                                             1 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_fruit-salad
+kebi2024:meal_fruit-salad rdf:type owl:NamedIndividual ,
+                                   kebi2024:Meal ;
+                          kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                      kebi2024:category_vegetarian ;
+                          kebi2024:meal_hasCourse kebi2024:course_dessert ;
+                          kebi2024:meal_ingredients kebi2024:ingredient_apple ,
+                                                    kebi2024:ingredient_banana ,
+                                                    kebi2024:ingredient_strawberry ;
+                          kebi2024:meal_notHasGlutenIntolerance kebi2024:allergy_gluten ;
+                          kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                          kebi2024:hasKcal 90 ;
+                          kebi2024:hasName "Fruit salad" ;
+                          kebi2024:meal_caloriesConscious 0 ,
+                                                          1 ,
+                                                          2 ,
+                                                          3 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_insalata-mista
+kebi2024:meal_insalata-mista rdf:type owl:NamedIndividual ,
+                                      kebi2024:Meal ;
+                             kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                         kebi2024:category_vegetarian ;
+                             kebi2024:meal_hasCourse kebi2024:course_side_dish ;
+                             kebi2024:meal_ingredients kebi2024:ingredient_lettuce ,
+                                                       kebi2024:ingredient_mais ,
+                                                       kebi2024:ingredient_oil ,
+                                                       kebi2024:ingredient_salt ;
+                             kebi2024:meal_notHasGlutenIntolerance kebi2024:allergy_gluten ;
+                             kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                             kebi2024:hasKcal 130 ;
+                             kebi2024:hasName "Insalata mista" ;
+                             kebi2024:meal_caloriesConscious 0 ,
+                                                             1 ,
+                                                             2 ,
+                                                             3 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_involtini-primavera
+kebi2024:meal_involtini-primavera rdf:type owl:NamedIndividual ,
+                                           kebi2024:Meal ;
+                                  kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                              kebi2024:category_vegetarian ;
+                                  kebi2024:meal_hasCourse kebi2024:course_appetizer ;
+                                  kebi2024:meal_ingredients kebi2024:ingredient_cabbage ,
+                                                            kebi2024:ingredient_carrot ,
+                                                            kebi2024:ingredient_oil ,
+                                                            kebi2024:ingredient_puff-pastry ,
+                                                            kebi2024:ingredient_salt ;
+                                  kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                                  kebi2024:hasKcal 260 ;
+                                  kebi2024:hasName "Involtini primavera" ;
+                                  kebi2024:meal_caloriesConscious 0 ,
+                                                                  1 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_lasagne
+kebi2024:meal_lasagne rdf:type owl:NamedIndividual ,
+                               kebi2024:Meal ;
+                      kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                  kebi2024:category_omnivore ;
+                      kebi2024:meal_hasCourse kebi2024:course_first_dish ;
+                      kebi2024:meal_ingredients kebi2024:ingredient_bechamel ,
+                                                kebi2024:ingredient_minced-meat ,
+                                                kebi2024:ingredient_oil ,
+                                                kebi2024:ingredient_parmesan ,
+                                                kebi2024:ingredient_pasta ,
+                                                kebi2024:ingredient_salt ,
+                                                kebi2024:ingredient_tomato ;
+                      kebi2024:hasKcal 700 ;
+                      kebi2024:hasName "Lasagne" ;
+                      kebi2024:meal_caloriesConscious 0 ,
+                                                      1 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_melanzane_grigliate
+kebi2024:meal_melanzane_grigliate rdf:type owl:NamedIndividual ,
+                                           kebi2024:Meal ;
+                                  kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                              kebi2024:category_vegetarian ;
+                                  kebi2024:meal_hasCourse kebi2024:course_side_dish ;
+                                  kebi2024:meal_ingredients kebi2024:ingredient_eggplant ,
+                                                            kebi2024:ingredient_oil ,
+                                                            kebi2024:ingredient_salt ;
+                                  kebi2024:meal_notHasGlutenIntolerance kebi2024:allergy_gluten ;
+                                  kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                                  kebi2024:hasKcal 80 ;
+                                  kebi2024:hasName "Melanzane grigliate" ;
+                                  kebi2024:meal_caloriesConscious 0 ,
+                                                                  1 ,
+                                                                  2 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_patatine-fritte
+kebi2024:meal_patatine-fritte rdf:type owl:NamedIndividual ,
+                                       kebi2024:Meal ;
+                              kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                          kebi2024:category_omnivore ,
+                                                          kebi2024:category_vegetarian ;
+                              kebi2024:meal_hasCourse kebi2024:course_side_dish ;
+                              kebi2024:meal_ingredients kebi2024:ingredient_oil ,
+                                                        kebi2024:ingredient_potato ,
+                                                        kebi2024:ingredient_salt ;
+                              kebi2024:meal_notHasGlutenIntolerance kebi2024:allergy_gluten ;
+                              kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                              kebi2024:hasKcal 150 ;
+                              kebi2024:hasName "Patatine fritte" ;
+                              kebi2024:meal_caloriesConscious 0 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_pesce-fritto
+kebi2024:meal_pesce-fritto rdf:type owl:NamedIndividual ,
+                                    kebi2024:Meal ;
+                           kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                       kebi2024:category_omnivore ;
+                           kebi2024:meal_hasCourse kebi2024:course_side_dish ;
+                           kebi2024:meal_ingredients kebi2024:ingredient_calamari ,
+                                                     kebi2024:ingredient_cod ,
+                                                     kebi2024:ingredient_oil ,
+                                                     kebi2024:ingredient_salt ,
+                                                     kebi2024:ingredient_shrimp ;
+                           kebi2024:meal_notHasGlutenIntolerance kebi2024:allergy_gluten ;
+                           kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                           kebi2024:hasKcal 500 ;
+                           kebi2024:hasName "Pesce fritto" ;
+                           kebi2024:meal_caloriesConscious 0 ,
+                                                           1 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_pizza-bianca
+kebi2024:meal_pizza-bianca rdf:type owl:NamedIndividual ,
+                                    kebi2024:Meal ;
+                           kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                       kebi2024:category_omnivore ,
+                                                       kebi2024:category_vegetarian ;
+                           kebi2024:meal_hasCourse kebi2024:course_main_dish ;
+                           kebi2024:meal_ingredients kebi2024:ingredient_0_type_flour ,
+                                                     kebi2024:ingredient_oil ,
+                                                     kebi2024:ingredient_salt ;
+                           kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                           kebi2024:hasKcal 550 ;
+                           kebi2024:hasName "Pizza bianca" ;
+                           kebi2024:meal_caloriesConscious 0 ,
+                                                           1 ,
+                                                           2 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_pizza-margherita
+kebi2024:meal_pizza-margherita rdf:type owl:NamedIndividual ,
+                                        kebi2024:Meal ;
+                               kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                           kebi2024:category_omnivore ,
+                                                           kebi2024:category_vegetarian ;
+                               kebi2024:meal_hasCourse kebi2024:course_main_dish ;
+                               kebi2024:meal_ingredients kebi2024:ingredient_0_type_flour ,
+                                                         kebi2024:ingredient_mozzarella-cheese ,
+                                                         kebi2024:ingredient_oil ,
+                                                         kebi2024:ingredient_salt ,
+                                                         kebi2024:ingredient_tomato ;
+                               kebi2024:hasKcal 700 ;
+                               kebi2024:hasName "Pizza Margherita" ;
+                               kebi2024:meal_caloriesConscious 0 ,
+                                                               1 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_ramen
+kebi2024:meal_ramen rdf:type owl:NamedIndividual ,
+                             kebi2024:Meal ;
+                    kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                kebi2024:category_omnivore ;
+                    kebi2024:meal_hasCourse kebi2024:course_main_dish ;
+                    kebi2024:meal_ingredients kebi2024:ingredient_black-pepper ,
+                                              kebi2024:ingredient_egg ,
+                                              kebi2024:ingredient_garlic ,
+                                              kebi2024:ingredient_oil ,
+                                              kebi2024:ingredient_pasta ,
+                                              kebi2024:ingredient_pork-chop ,
+                                              kebi2024:ingredient_salt ,
+                                              kebi2024:ingredient_water ;
+                    kebi2024:hasKcal 800 ;
+                    kebi2024:hasName "Ramen" ;
+                    kebi2024:meal_caloriesConscious 0 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_rigatoni-alla-carbonara
+kebi2024:meal_rigatoni-alla-carbonara rdf:type owl:NamedIndividual ,
+                                               kebi2024:Meal ;
+                                      kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                                  kebi2024:category_omnivore ;
+                                      kebi2024:meal_hasCourse kebi2024:course_first_dish ;
+                                      kebi2024:meal_ingredients kebi2024:ingredient_black-pepper ,
+                                                                kebi2024:ingredient_egg ,
+                                                                kebi2024:ingredient_oil ,
+                                                                kebi2024:ingredient_pasta ,
+                                                                kebi2024:ingredient_pork-cheek ,
+                                                                kebi2024:ingredient_salt ;
+                                      kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                                      kebi2024:hasKcal 705 ;
+                                      kebi2024:hasName "Rigatoni alla carbonara" ;
+                                      kebi2024:meal_caloriesConscious 0 ,
+                                                                      1 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_spaghetti-agli-olio-e-peperoncino
+kebi2024:meal_spaghetti-agli-olio-e-peperoncino rdf:type owl:NamedIndividual ,
+                                                         kebi2024:Meal ;
+                                                kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                                            kebi2024:category_omnivore ,
+                                                                            kebi2024:category_vegetarian ;
+                                                kebi2024:meal_hasCourse kebi2024:course_first_dish ;
+                                                kebi2024:meal_ingredients kebi2024:ingredient_chili ,
+                                                                          kebi2024:ingredient_garlic ,
+                                                                          kebi2024:ingredient_oil ,
+                                                                          kebi2024:ingredient_pasta ,
+                                                                          kebi2024:ingredient_salt ;
+                                                kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                                                kebi2024:hasKcal 380 ;
+                                                kebi2024:hasName "Pasta aglio olio e peperoncino" ;
+                                                kebi2024:meal_caloriesConscious 0 ,
+                                                                                1 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_tagliatelle-allo-scoglio
+kebi2024:meal_tagliatelle-allo-scoglio rdf:type owl:NamedIndividual ,
+                                                kebi2024:Meal ;
+                                       kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                                   kebi2024:category_omnivore ;
+                                       kebi2024:meal_hasCourse kebi2024:course_first_dish ;
+                                       kebi2024:meal_ingredients kebi2024:ingredient_calamari ,
+                                                                 kebi2024:ingredient_chili ,
+                                                                 kebi2024:ingredient_garlic ,
+                                                                 kebi2024:ingredient_mussel ,
+                                                                 kebi2024:ingredient_oil ,
+                                                                 kebi2024:ingredient_pasta ,
+                                                                 kebi2024:ingredient_salt ,
+                                                                 kebi2024:ingredient_shrimp ;
+                                       kebi2024:meal_notHasLactoseIntolerance kebi2024:allergy_lactose ;
+                                       kebi2024:hasKcal 400 ;
+                                       kebi2024:hasName "Tagliatelle allo scoglio" ;
+                                       kebi2024:meal_caloriesConscious 0 ,
+                                                                       1 ,
+                                                                       2 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_trofie-cacio-e-pepe
+kebi2024:meal_trofie-cacio-e-pepe rdf:type owl:NamedIndividual ,
+                                           kebi2024:Meal ;
+                                  kebi2024:food_hasCategories kebi2024:category_carnivorous ,
+                                                              kebi2024:category_omnivore ,
+                                                              kebi2024:category_vegetarian ;
+                                  kebi2024:meal_hasCourse kebi2024:course_first_dish ;
+                                  kebi2024:meal_ingredients kebi2024:ingredient_black-pepper ,
+                                                            kebi2024:ingredient_oil ,
+                                                            kebi2024:ingredient_pasta ,
+                                                            kebi2024:ingredient_salt ,
+                                                            kebi2024:ingredient_sheeps-cheese ;
+                                  kebi2024:hasKcal 510 ;
+                                  kebi2024:hasName "Trofie cacio e pepe" ;
+                                  kebi2024:meal_caloriesConscious 0 ,
+                                                                  1 ,
+                                                                  2 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/meal_verdure-miste
+kebi2024:meal_verdure-miste rdf:type owl:NamedIndividual ,
+                                     kebi2024:Meal ;
+                            kebi2024:food_hasCategories kebi2024:category_omnivore ,
+                                                        kebi2024:category_vegetarian ;
+                            kebi2024:meal_hasCourse kebi2024:course_second_dish ;
+                            kebi2024:meal_ingredients kebi2024:ingredient_cabbage ,
+                                                      kebi2024:ingredient_eggplant ,
+                                                      kebi2024:ingredient_lettuce ,
+                                                      kebi2024:ingredient_salt ;
+                            kebi2024:hasKcal 50 ;
+                            kebi2024:meal_caloriesConscious 0 ,
+                                                            1 ,
+                                                            2 ,
+                                                            3 .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/menu_italian-menu
+kebi2024:menu_italian-menu rdf:type owl:NamedIndividual ,
+                                    kebi2024:Menu ;
+                           kebi2024:menu_containsDrink kebi2024:drink_coca_cola ,
+                                                       kebi2024:drink_water ;
+                           kebi2024:menu_containsMeal kebi2024:meal_affettati-misti ,
+                                                      kebi2024:meal_bistecca-alla-fiorentina ,
+                                                      kebi2024:meal_formaggi-misti ,
+                                                      kebi2024:meal_fruit-salad ,
+                                                      kebi2024:meal_insalata-mista ,
+                                                      kebi2024:meal_involtini-primavera ,
+                                                      kebi2024:meal_lasagne ,
+                                                      kebi2024:meal_melanzane_grigliate ,
+                                                      kebi2024:meal_patatine-fritte ,
+                                                      kebi2024:meal_pizza-bianca ,
+                                                      kebi2024:meal_pizza-margherita ,
+                                                      kebi2024:meal_rigatoni-alla-carbonara ,
+                                                      kebi2024:meal_spaghetti-agli-olio-e-peperoncino ,
+                                                      kebi2024:meal_trofie-cacio-e-pepe .
+
+
+###  http://www.semanticweb.org/lauz/ontologies/2025/2/LuziLorenzoMenu/restaurant_our-restaurant
+kebi2024:restaurant_our-restaurant rdf:type owl:NamedIndividual ,
+                                            kebi2024:Restaurant ;
+                                   kebi2024:restaurant_hasGuest kebi2024:guest_1 ,
+                                                                kebi2024:guest_2 ;
+                                   kebi2024:restaurant_hasMenu kebi2024:menu_italian-menu ;
+                                   kebi2024:hasName "Da Lorenzo" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+kebi2024:guest rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+kebi2024:category rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+kebi2024:allergy rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+kebi2024:level rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+kebi2024:course rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+kebi2024:meal rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+kebi2024:ingredient rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+kebi2024:gluten rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+kebi2024:dairy rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S6" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Guest ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_hasCategory ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> kebi2024:category
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_hasAllergies ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> kebi2024:allergy
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_CaloriesLevel ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> kebi2024:level
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_hasPreferenceCourse ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> kebi2024:course
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Category ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> kebi2024:category
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Allergy ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> kebi2024:allergy
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Meal ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:food_hasCategories ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> kebi2024:category
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_notHasLactoseIntolerance ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> kebi2024:allergy
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_caloriesConscious ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> kebi2024:level
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_hasCourse ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument2> kebi2024:course
+                                                                                                                                                                              ] ;
+                                                                                                                                                                    rdf:rest rdf:nil
+                                                                                                                                                                  ]
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_mealSuggested ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> kebi2024:meal
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S5" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Guest ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_hasCategory ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> kebi2024:category
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_hasAllergies ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> kebi2024:allergy
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_CaloriesLevel ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> kebi2024:level
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_hasPreferenceCourse ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> kebi2024:course
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Category ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> kebi2024:category
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Allergy ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> kebi2024:allergy
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Meal ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:food_hasCategories ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument2> kebi2024:category
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_notHasGlutenIntolerance ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument2> kebi2024:allergy
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_caloriesConscious ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> kebi2024:level
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_hasCourse ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument2> kebi2024:course
+                                                                                                                                                                              ] ;
+                                                                                                                                                                    rdf:rest rdf:nil
+                                                                                                                                                                  ]
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_mealSuggested ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> kebi2024:meal
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Guest ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_hasAllergies ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> kebi2024:allergy
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Meal ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_ingredients ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> kebi2024:ingredient
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:ingredient_hasGlutenIntolerance ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> kebi2024:ingredient ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> kebi2024:allergy
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_isAtRiskAllergies ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> kebi2024:meal
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Guest ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_hasAllergies ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> kebi2024:allergy
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Meal ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_ingredients ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> kebi2024:ingredient
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:ingredient_hasLactoseIntolerance ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> kebi2024:ingredient ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> kebi2024:allergy
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:guest_isAtRiskAllergies ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:guest ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> kebi2024:meal
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Meal ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_ingredients ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> kebi2024:ingredient
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Ingredient ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> kebi2024:ingredient
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:ingredient_hasGlutenIntolerance ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> kebi2024:ingredient ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> kebi2024:gluten
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_hasGlutenIntolerance ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> kebi2024:gluten
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S4" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Meal ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_ingredients ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> kebi2024:ingredient
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> kebi2024:Ingredient ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> kebi2024:ingredient
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:ingredient_hasLactoseIntolerance ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> kebi2024:ingredient ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> kebi2024:dairy
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> kebi2024:meal_hasLactoseIntolerance ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> kebi2024:meal ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> kebi2024:dairy
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
